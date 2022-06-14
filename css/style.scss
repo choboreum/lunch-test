@@ -1,0 +1,46 @@
+#contents{
+    height: 100vh;
+    &:after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        left: 0;
+        bottom: 10vh;
+        background: url(../images/earth.png) center no-repeat;
+        background-size: contain;
+        animation: rotate_image 10s linear infinite;
+        transform-origin: 50% 50%;
+    }
+    h2{
+        font-size: 42px;
+        font-weight: 700;
+        color: #29abe2;
+        padding: 15vh 0 10px;
+    }
+    #startBtn{
+        display: inline-block;
+        font-weight: 700;
+        width: 300px;
+        border: 5px solid #333;
+        border-radius: 20px;
+        background: #fff;
+        padding: 5px;
+        left: 50%;
+        bottom: 24vh;
+        z-index: 100;
+        margin-left: -150px;
+        &:hover{
+            transform: scale(1.1);
+            transform-origin: center;
+            transition: all .2s ease-in-out;
+        }
+    }
+}
+
+@keyframes rotate_image{
+	100% {
+        transform: rotate(360deg);
+    }
+}
