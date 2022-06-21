@@ -3,6 +3,7 @@
     .cha_box{
         .stage {
             width:480px;
+            height: 100%;
             position:relative;
             left: -12%;
             margin:0 auto 30px;
@@ -769,4 +770,18 @@
     50%  {top: -32px;}
     75%   {top: -20px;}
     100% {top: -32px;}
+}
+
+
+@media only screen and (max-width: 600px) {
+    #contents {
+        margin-bottom: 250px;
+        .cha_box{
+            height: 100%;
+        }
+        .cha_info_box {
+            left: 20%;
+            top: -100px;
+        }
+    }
 }
