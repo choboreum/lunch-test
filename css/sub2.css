@@ -1,1 +1,33 @@
-/* No CSS *//*# sourceMappingURL=sub2.css.map */
+#contents {
+  height: auto;
+  padding-top: 8vh;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+#contents #back {
+  width: 100%;
+  height: 400px;
+  background: rgba(0, 0, 0, 0.2);
+  margin-bottom: 50px;
+}
+
+#contents section {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contents section p {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+#contents section .btn {
+  position: inherit;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=sub2.css.map */
