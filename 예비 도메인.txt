@@ -1,0 +1,5 @@
+todaylunch.kr	
+IP 112.175.50.228
+메일서버 uws64-043.cafe24.com	
+우선순위 10
+SPF "v=spf1 ip4:112.175.50.228 ~all"

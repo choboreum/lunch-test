@@ -14,10 +14,16 @@
 
 #contents section {
   overflow: hidden;
+  display: none;
+  animation: fadeOut 900ms;
+}
+
+#contents section.on {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: fadeIn 900ms;
 }
 
 #contents section p {
@@ -29,5 +35,23 @@
 #contents section .btn {
   position: inherit;
   margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=sub2.css.map */

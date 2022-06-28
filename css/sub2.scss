@@ -11,10 +11,15 @@
     }
     section{
         overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        display: none;
+        animation: fadeOut 900ms;
+        &.on{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 900ms;
+        }
         p{
             font-weight: 700;
             font-size: 22px;
@@ -25,4 +30,24 @@
             margin-bottom: 10px;
         }
     }
+}
+
+@keyframes fadeIn {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes fadeOut {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@-webkit-keyframes fadeOut {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }

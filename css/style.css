@@ -1,11 +1,12 @@
 #contents:after {
   content: '';
   display: block;
-  width: 100%;
+  width: 500px;
   height: 50%;
   position: absolute;
-  left: 0;
+  left: 50%;
   bottom: 10vh;
+  margin-left: -250px;
   background: url(../images/earth.png) center no-repeat;
   background-size: contain;
   animation: rotate_image 10s linear infinite;
