@@ -25,7 +25,7 @@
                             <div class="shadow"></div>
                             <div class="core">
                             <div class="clothes"></div>
-
+                            
                             <div class="shoulder-r">
                                 <div class="shoulder-r-arm-upper">
                                     <div class="elbow-r">
@@ -67,7 +67,7 @@
                                     </div>
                                 </div>
                             </div>
-
+                            
                         <div class="headcontainer">
                                 <div class="bun-r none"></div>
                                 <div class="bun-l none"></div>
@@ -90,7 +90,7 @@
                                     </div>
                                 </div>
                             </div>
-
+                            
                             </div>
                         </div>
                     </div>
@@ -105,11 +105,33 @@
                     </form>
                     <a href="javascript:check();" data-role="submit" class="btn">여정 떠나기</a>
                     </div>
+                    
+                    
                 </div>
             </div>
         </div>
     </div>
+    
+    <script src="js/style.js" type="text/javascript">
+      var usrnic = document.getElementById('userNickName');
+      var usrage = document.getElementById('userAge');
+      var usrgen = document.getElementById('userNickName');
 
-    <script src="js/style.js" > </script>
+      //사용자 이름 바뀌었을때 이벤트
+      usrnic.addEventListener('change',function(){
+        let x = document.getElementsByClassName("chaNickName")[0];
+        x.innerText = usrnic.value ;
+        window.localStorage.setItem('name',usrnic.value);
+      })
+
+      //나이 바뀌었을 때 이벤트
+      usrage.addEventListener('change',function(){
+        //나이값의 크기비교
+        //크기별로 이미지 변경
+      })
+
+      //라디오는 아이디를 어떻게 먹여서 변경될때마다 액션을 줄지 확인해보기
+
+    </script>
 </body>
 </html>
