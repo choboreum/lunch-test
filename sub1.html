@@ -9,99 +9,33 @@
     <link rel="stylesheet" href="css/sub1.css">
     <link rel="stylesheet" href="css/cha.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('.cha_box').load("./cha.html");
+        });
+    </script>
     <script src="js/common.js"></script>
 </head>
 <body>
     <div id="wrap">
         <header id="header">
-            <h1>파이팀</h1>
+            <h1><a href="./index.html">파이팀</a></h1>
         </header>
         <div id="container">
             <div id="contents">
                 <p>인생은 점심 고르기의 연속.<br>이 여정을 함께할 나의 캐릭터를 만들어주세요🐱‍🚀</p>
                 <div class="chaArea">
                     <div class="cha_box pr">
-                        <div class="stage">
-                            <div class="shadow"></div>
-                            <div class="core">
-                            <div class="clothes"></div>
-
-                            <div class="shoulder-r">
-                                <div class="shoulder-r-arm-upper">
-                                    <div class="elbow-r">
-                                        <div class="elbow-r-arm-lower">
-                                            <div class="hand-r"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        <div class="shoulder-l">
-                            <div class="shoulder-l-arm-upper">
-                                <div class="elbow-l">
-                                    <div class="elbow-l-arm-lower">
-                                        <div class="hand-l"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        <div class="hip-r">
-                            <div class="hip-r-leg-upper">
-                                <div class="knee-r">
-                                    <div class="knee-r-leg-lower">
-                                        <div class="sock-r"></div>
-                                        <div class="foot-r"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        <div class="hip-l">
-                            <div class="hip-l-leg-upper">
-                                <div class="knee-l">
-                                    <div class="knee-l-leg-lower">
-                                        <div class="sock-l"></div>
-                                        <div class="foot-l"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        <div class="headcontainer">
-                                <div class="bun-r none"></div>
-                                <div class="bun-l none"></div>
-                            <div class="ear-r"></div>
-                            <div class="ear-l"></div>
-                            <div class="headbg">
-                                <div class="hair-r"></div>
-                                <div class="hair-l"></div>
-                                <div class="face"></div>
-                                <div class="smile"></div>
-                                <div class="eyes">
-                                    <div class="eyelid-t"></div>
-                                    <div class="eyelid-b"></div>
-                                    <div class="eye-r">
-                                        <div class="pupil-r"></div>
-                                    </div>
-                                    <div class="eye-l">
-                                        <div class="pupil-l"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            </div>
-                        </div>
+                        
                     </div>
                     <div class="cha_info_box pr">
                     <!--사용자 이름 바뀌었을때 이벤트-->
                     <p><span class="chaNickName">이름 위치</span></p>
                     <form action="">
                         <input type="text" name="name" placeholder="이름" id="userNickName">
-                        <input type="text" name="age" placeholder="나이" id="userAge">
+                        <input type="number" min="0" max="99" maxlength="2"  name="age" placeholder="나이" id="userAge" onchange="checkUserAge(this);">
                         <input type="radio" name="gender" value="male" onclick="findGender();" /><span>남</span>
-                        <input type="radio" name="gender"value="female" onclick="findGender();"  /><span>여</span>
+                        <input type="radio" name="gender" value="female" onclick="findGender();" /><span>여</span>
                     </form>
                     <a href="javascript:check();" data-role="submit" class="btn">여정 떠나기</a>
                     </div>
@@ -110,6 +44,6 @@
         </div>
     </div>
 
-    <script src="js/style.js" > </script>
+    <script src="js/style.js"></script>
 </body>
 </html>
