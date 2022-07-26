@@ -15,6 +15,7 @@
         color: #fff;
         border-radius: 5px;
         margin-bottom: 5px;
+        padding: 5px 20px;
     }
     section{
         overflow: hidden;
@@ -57,4 +58,18 @@
 @-webkit-keyframes fadeOut {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+@media only screen and (max-width: 600px) {
+    #contents {
+        .backPage,
+        .backQuestion{
+            font-size: 14px;
+        }
+        section{
+            .btn{
+                font-size: 14px;
+            }
+        }
+    }
 }

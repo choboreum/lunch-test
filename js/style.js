@@ -1,7 +1,7 @@
 function link() {
     $('#back').addClass('scale');
     setTimeout(function() {
-        location.href = './../sub1.html';
+        location.href = './sub1.html';
     }, 2000);
 }
 
