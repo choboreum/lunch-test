@@ -2,7 +2,7 @@ function link() {
     $('#back').addClass('scale');
     setTimeout(function() {
         location.href = './sub1.html';
-    }, 2000);
+    }, 1500);
 }
 
 var usrnic = document.getElementById('userNickName');
