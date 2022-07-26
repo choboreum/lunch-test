@@ -1,5 +1,5 @@
 #contents{
-    &:after{
+    #back{
         content: '';
         display: block;
         width: 500px;
@@ -12,6 +12,13 @@
         background-size: contain;
         animation: rotate_image 10s linear infinite;
         transform-origin: 50% 50%;
+        &.scale{
+            width: 100%;
+            height: 120%;
+            left: 20%;
+            bottom: -10vh;
+            transition: all 1.9s;
+        }
     }
     h2{
         font-size: 42px;

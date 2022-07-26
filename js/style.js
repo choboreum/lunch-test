@@ -1,3 +1,10 @@
+function link() {
+    $('#back').addClass('scale');
+    setTimeout(function() {
+        location.href = './../sub1.html';
+    }, 2000);
+}
+
 var usrnic = document.getElementById('userNickName');
 var usrage = document.getElementById('userAge');
 var usrgen = document.getElementById('userNickName');
@@ -78,61 +85,65 @@ setTimeout(()=>{
     chet.beginPath();
     chet.strokeStyle="#000";
     chet.lineWidth=10;
-    chet.arc(140 , 140 , 40 , 0, Math.PI, true);
+    chet.arc(60 , 70 , 40 , 0, Math.PI, true);
     chet.stroke();
 }, 500)
 
 function checkUserAge (obj) {
     var userAgeValue = document.getElementById('userAge').value;
+    var childBag = $('.bag .child')
+    var adultBag = $('.hand-r .adult')
+    var ageHairColor = $('.headbg, .hair-r, .hair-l, .bun-r, .bun-l')
     if (userAgeValue >= 0 || userAgeValue <= 20 ){
         console.log('아동');
-        $('.bag .child').addClass('on');
-        $('.bag .adult').removeClass('on');
-        $('.headbg, .hair-r, .hair-l, .bun-r, .bun-l').css('background','#714935');
-
-    } else if (userAgeValue > 21 || userAgeValue <= 40 ) {
+        childBag.addClass('on');
+        adultBag.removeClass('on');
+        ageHairColor.css('background','#714935');
+    } 
+    if (userAgeValue >= 21) {
         console.log('성인');
-        $('.bag .child').removeClass('on');
-        $('.bag .adult').addClass('on');
-        $('.headbg, .hair-r, .hair-l, .bun-r, .bun-l').css('background','#3d3435');
-
-    } else if (userAgeValue > 41) {
-        console.log('중년');
-        $('.bag .child').removeClass('on');
-        $('.bag .adult').addClass('on');
-        $('.headbg, .hair-r, .hair-l, .bun-r, .bun-l').css('background','#646464');
-    }
+        childBag.removeClass('on');
+        adultBag.addClass('on');
+        ageHairColor.css('background','#3d3435');
+        if (userAgeValue >= 51) {
+            console.log('중년');
+            childBag.removeClass('on');
+            adultBag.addClass('on');
+            ageHairColor.css('background','#646464');
+        }
+    } 
+    
 }
 
 /* input 검사 */
 function check(){
-    $("a[data-role=submit]").unbind('click').on('click', function() {
-        if($('input[name="name"]').val().trim() == ''){
-            alert('이름은 필수 입력입니다.');
-            $('input[name="name"]').val('');
-            $('input[name="name"]').focus();
-            return false;
-        }
-        if($('input[name="age"]').val().trim() == ''){
-            alert('나이는 필수 입력입니다.');
-            $('input[name="age"]').val('');
-            $('input[name="age"]').focus();
-            return false;
-        }
-        if($('input[name="gender"]').is(':checked') == ''){
-            alert('성별은 필수 입력입니다.');
-            return false;
-        }
-        else{
-            location.href = "./sub2.html";
-        }
-    })
+    if($('input[name="name"]').val().trim() == ''){
+        alert('이름은 필수 입력입니다.');
+        $('input[name="name"]').val('');
+        $('input[name="name"]').focus();
+        return false;
+    }
+    if($('input[name="age"]').val().trim() == ''){
+        alert('나이는 필수 입력입니다.');
+        $('input[name="age"]').val('');
+        $('input[name="age"]').focus();
+        return false;
+    }
+    if($('input[name="gender"]').is(':checked') == ''){
+        alert('성별은 필수 입력입니다.');
+        return false;
+    }
+    else{
+        location.href = "./sub2.html";
+    }
 };
 
 /* 질문페이지 효과 */
+function backPage(){
+    $(this).parent('section').hide().removeClass('on')
+    $(this).parent('section').prev('section').addClass('on')
+}
 function nextPage(){
-    $("button").on('click', function() {
-        $(this).parent('section').removeClass('on')
-        $(this).parent('section').next('section').addClass('on')
-    });
+    $(this).parent('section').hide().removeClass('on')
+    $(this).parent('section').next('section').addClass('on')
 }

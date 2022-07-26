@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/sub2.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script>
+        $(window).ready(function(){
+            $('.backQuestion').click(backPage);
+            $('.btn').click(nextPage);
+        })
+    </script>
 </head>
 <body>
     <div id="wrap">
@@ -17,59 +23,68 @@
         <div id="container">
             <div id="contents">
                 <div id="back"></div>
-                <section id="question1" class="on">
+                <section id="question1" style="display: block;">
+                    <button class="backPage" onclick="location.href='./sub1.html'">← 캐릭터 다시 설정하기</button>
                     <p>늦잠을 잤는지</p>
-                    <button class="btn" onclick="nextPage();">예!!</button>
-                    <button class="btn" onclick="nextPage();">아니요!!</button>
+                    <button class="btn">예!!</button>
+                    <button class="btn">아니요!!</button>
                 </section>
                 <section id="question2">
+                    <button class="backQuestion">← 이전 질문</button>
                     <p>머리 손질을 했는지</p>
-                    <button class="btn" onclick="nextPage();">예!!</button>
-                    <button class="btn" onclick="nextPage();">아니요!!</button>
+                    <button class="btn">예!!</button>
+                    <button class="btn">아니요!!</button>
                 </section>
                 <section id="question3">
+                    <button class="backQuestion">← 이전 질문</button>
                     <p>옷이 마음에 드는지</p>
-                    <button class="btn" onclick="nextPage();">예!!</button>
-                    <button class="btn" onclick="nextPage();">아니요!!</button>
+                    <button class="btn">예!!</button>
+                    <button class="btn">아니요!!</button>
                 </section>
                 <section id="question4">
+                    <button class="backQuestion">← 이전 질문</button>
                     <p>날씨가 어떤지</p>
-                    <button class="btn" onclick="nextPage();">맑음</button>
-                    <button class="btn" onclick="nextPage();">흐림</button>
-                    <button class="btn" onclick="nextPage();">비/눈</button>
+                    <button class="btn">맑음</button>
+                    <button class="btn">흐림</button>
+                    <button class="btn">비/눈</button>
                 </section>
                 <section id="question5">
+                    <button class="backQuestion">← 이전 질문</button>
                     <p>출근길에 뭐했는지</p>
-                    <button class="btn" onclick="nextPage();">노래</button>
-                    <button class="btn" onclick="nextPage();">유튜브</button>
-                    <button class="btn" onclick="nextPage();">txt</button>
-                    <button class="btn" onclick="nextPage();">sns</button>
-                    <button class="btn" onclick="nextPage();">카카오톡</button>
+                    <button class="btn">노래</button>
+                    <button class="btn">유튜브</button>
+                    <button class="btn">txt</button>
+                    <button class="btn">sns</button>
+                    <button class="btn">카카오톡</button>
                 </section>
                 <section id="question6">
+                    <button class="backQuestion">← 이전 질문</button>
                     <p>어제 회식을 했는지</p>
-                    <button class="btn" onclick="nextPage();">예!!</button>
-                    <button class="btn" onclick="nextPage();">아니요!!</button>
+                    <button class="btn">예!!</button>
+                    <button class="btn">아니요!!</button>
                 </section>
                 <section id="question7">
+                    <button class="backQuestion">← 이전 질문</button>
                     <p>오늘 약속이 있는지</p>
-                    <button class="btn" onclick="nextPage();">예!!</button>
-                    <button class="btn" onclick="nextPage();">아니요!!</button>
+                    <button class="btn">예!!</button>
+                    <button class="btn">아니요!!</button>
                 </section>
                 <section id="question8">
+                    <button class="backQuestion">← 이전 질문</button>
                     <p>배달을 시킬건지</p>
-                    <button class="btn" onclick="nextPage();">예!!</button>
-                    <button class="btn" onclick="nextPage();">아니요!!</button>
+                    <button class="btn">예!!</button>
+                    <button class="btn">아니요!!</button>
                 </section>
                 <section id="question9">
+                    <button class="backQuestion">← 이전 질문</button>
                     <p>동료가 열받게 했는지</p>
-                    <button class="btn" onclick="nextPage();">예!!</button>
-                    <button class="btn" onclick="nextPage();">아니요!!</button>
+                    <button class="btn">예!!</button>
+                    <button class="btn">아니요!!</button>
                 </section>
                 <section id="question10">
                     <p>야근 각인지?</p>
-                    <button class="btn" onclick="nextPage();">예!!</button>
-                    <button class="btn" onclick="nextPage();">아니요!!</button>
+                    <button class="btn">예!!</button>
+                    <button class="btn">아니요!!</button>
                 </section>
             </div>
         </div>
