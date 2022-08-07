@@ -1,7 +1,7 @@
 function link() {
     $('#back').addClass('scale');
     setTimeout(function() {
-        location.href = './sub1.html';
+        location.href = './chooseCha.html';
     }, 1500);
 }
 
@@ -134,7 +134,7 @@ function check(){
         return false;
     }
     else{
-        location.href = "./sub2.html";
+        location.href = "./question.html";
     }
 };
 
@@ -146,4 +146,7 @@ function backPage(){
 function nextPage(){
     $(this).parent('section').hide().removeClass('on')
     $(this).parent('section').next('section').addClass('on')
+}
+function goResult(){
+    window.location.href = './result.html';
 }

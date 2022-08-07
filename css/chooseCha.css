@@ -1,0 +1,52 @@
+#contents .chaArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contents .cha_box {
+  width: 50%;
+  max-width: 280px;
+  height: 480px;
+  overflow: hidden;
+}
+
+#contents input[type=text],
+#contents input[type=number] {
+  width: 200px;
+  padding: 5px;
+  display: block;
+  margin: 10px;
+}
+
+#contents span {
+  margin: 0 10px;
+}
+
+#contents .none {
+  display: none;
+}
+
+#contents .male {
+  border-bottom: 95px solid #009688;
+}
+
+#contents .female {
+  border-bottom: 95px solid #f25437;
+}
+
+@media only screen and (max-width: 600px) {
+  #contents {
+    margin-bottom: 20%;
+  }
+  #contents .chaArea {
+    flex-direction: column;
+  }
+  #contents .cha_box {
+    width: 100%;
+  }
+  #contents .cha_info_box {
+    margin-bottom: 100px;
+  }
+}
+/*# sourceMappingURL=chooseCha.css.map */
