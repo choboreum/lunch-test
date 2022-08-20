@@ -1,0 +1,67 @@
+#contents{
+    height: 120vh;
+    .bgBox{
+        height: 100%;
+        top: 5%;
+    }
+    .txtBox{
+        overflow: hidden;
+        width: 80%;
+        padding: 30px 0;
+        background: rgba(255,255,255,.5);
+        border-radius: 40px;
+        position: fixed;
+        left: 10%;
+        top: 15%;
+        opacity: 0;
+        animation: fadeOut 2s;
+        animation-delay: 3.5s;
+        strong{
+            font-weight: 700;
+            font-size: 24px;
+        }
+        p{
+            margin: 10px 0 20px;
+            span{
+                font-weight: 700;
+            };
+        }
+        br{
+            display: none;
+        }
+        img{
+            width: 30%;
+        }
+        .btn{
+            top: 0;
+            width: auto;
+            padding: 5px 20px;
+            margin: 30px auto 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #contents{
+        height: 100vh;
+        .bgBox{
+            top: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #contents{
+        .txtBox{
+            strong{
+                font-size: 18px;
+            }
+            br{
+                display: block;
+            }
+            img{
+                width: 70%;
+            }
+        }
+    }
+}

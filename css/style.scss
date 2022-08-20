@@ -45,12 +45,6 @@
     }
 }
 
-@keyframes rotate_image{
-	100% {
-        transform: rotate(360deg);
-    }
-}
-
 @media only screen and (max-width: 460px) {
     #contents{
         #back{

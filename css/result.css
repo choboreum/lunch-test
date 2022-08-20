@@ -1,1 +1,72 @@
-/* No CSS *//*# sourceMappingURL=result.css.map */
+#contents {
+  height: 120vh;
+}
+
+#contents .bgBox {
+  height: 100%;
+  top: 5%;
+}
+
+#contents .txtBox {
+  overflow: hidden;
+  width: 80%;
+  padding: 30px 0;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 40px;
+  position: fixed;
+  left: 10%;
+  top: 15%;
+  opacity: 0;
+  animation: fadeOut 2s;
+  animation-delay: 3.5s;
+}
+
+#contents .txtBox strong {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+#contents .txtBox p {
+  margin: 10px 0 20px;
+}
+
+#contents .txtBox p span {
+  font-weight: 700;
+}
+
+#contents .txtBox br {
+  display: none;
+}
+
+#contents .txtBox img {
+  width: 30%;
+}
+
+#contents .txtBox .btn {
+  top: 0;
+  width: auto;
+  padding: 5px 20px;
+  margin: 30px auto 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  #contents {
+    height: 100vh;
+  }
+  #contents .bgBox {
+    top: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #contents .txtBox strong {
+    font-size: 18px;
+  }
+  #contents .txtBox br {
+    display: block;
+  }
+  #contents .txtBox img {
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=result.css.map */

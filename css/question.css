@@ -19,7 +19,7 @@
   /* Safari 4+ */
   /* Fx 5+ */
   /* Opera 12+ */
-  animation: bg-scrolling-reverse 9s infinite reverse;
+  animation: bg-scrolling-reverse 12s infinite reverse;
   /* IE 10+ */
   animation-timing-function: linear;
   position: absolute;
@@ -33,6 +33,15 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+}
+
+#contents #back .cha_box.go {
+  /* Safari 4+ */
+  /* Fx 5+ */
+  /* Opera 12+ */
+  animation: go-result 4s;
+  /* IE 10+ */
+  animation-timing-function: linear;
 }
 
 #contents .backPage,
@@ -73,45 +82,6 @@
 #contents section .btn {
   position: inherit;
   margin: 0 auto 10px;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes fadeOut {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes bg-loop {
-  0% {
-    right: 0;
-  }
-  100% {
-    right: 100%;
-  }
-}
-
-@keyframes bg-scrolling-reverse {
-  100% {
-    background-position: 1350px;
-  }
-}
-
-@keyframes bg-scrolling {
-  0% {
-    background-position: 1350px;
-  }
 }
 
 @media only screen and (max-width: 600px) {

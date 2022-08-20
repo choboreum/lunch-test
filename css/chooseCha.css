@@ -1,3 +1,7 @@
+#contents {
+  padding-top: 120px;
+}
+
 #contents .chaArea {
   display: flex;
   justify-content: center;
@@ -7,7 +11,7 @@
 #contents .cha_box {
   width: 50%;
   max-width: 280px;
-  height: 480px;
+  height: 445px;
   overflow: hidden;
 }
 

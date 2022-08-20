@@ -1,0 +1,75 @@
+//rotate img
+@keyframes rotate_image{
+	100% {
+        transform: rotate(360deg);
+    }
+}
+
+//fade in out
+@keyframes fadeIn {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes fadeOut {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes fadeOut {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+//bg loop
+@keyframes bg-loop {
+    0%   {right: 0;}
+    100% {right: 100%;}
+}
+
+//bg scrolling
+$bg-width: 1350px;
+@-webkit-keyframes bg-scrolling-reverse {
+    100% { background-position: $bg-width; }
+}
+@-moz-keyframes    bg-scrolling-reverse {
+    100% { background-position: $bg-width; }
+}
+@-o-keyframes      bg-scrolling-reverse {
+    100% { background-position: $bg-width; }
+}
+@keyframes         bg-scrolling-reverse {
+    100% { background-position: $bg-width; }
+}
+
+@-webkit-keyframes bg-scrolling {
+    0% { background-position: $bg-width; }
+}
+@-moz-keyframes    bg-scrolling {
+    0% { background-position: $bg-width; }
+}
+@-o-keyframes      bg-scrolling {
+    0% { background-position: $bg-width; }
+}
+@keyframes         bg-scrolling {
+    0% { background-position: $bg-width; }
+}
+
+//cha go-result
+@-webkit-keyframes go-result {
+    100% { left: 200%; }
+}
+@-moz-keyframes    go-result {
+    100% { left: 200%; }
+}
+@-o-keyframes      go-result {
+    100% { left: 200%; }
+}
+@keyframes         go-result {
+    100% { left: 200%; }
+}
