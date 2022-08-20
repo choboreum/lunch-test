@@ -150,3 +150,23 @@ function nextPage(){
 function goResult(){
     window.location.href = './result.html';
 }
+
+// 질문 배경
+function bgChange(){
+    $('.btn').on('click', function(){
+        let home = $('#question1') || $('#question2') || $('#question3')
+        let street = $('#question4') || $('#question5') || $('#question6') || $('#question7')
+        let office = $('#question7') || $('#question8') || $('#question9') || $('#question10')
+        if( street.hasClass('on') ){
+            console.log('street')
+            $('.bg-loop').css('background', 'url(../images/bg-street.jpg) bottom')
+        } else if( office.hasClass('on') ){
+            console.log('office')
+            $('.bg-loop').css('background', 'url(../images/bg-office.jpg) bottom')
+        } else if( home.hasClass('on') ){
+            console.log('home')
+            $('.bg-loop').css('background', 'url(../images/bg-home.jpg) bottom')
+        }
+    })
+    
+}

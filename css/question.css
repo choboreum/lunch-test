@@ -7,8 +7,23 @@
 
 #contents #back {
   width: 100%;
-  height: 350px;
+  height: 450px;
   margin-bottom: 50px;
+}
+
+#contents #back .bg-loop {
+  width: 100%;
+  height: 100%;
+  background: url(../images/bg-home.jpg) bottom;
+  background-size: cover;
+  /* Safari 4+ */
+  /* Fx 5+ */
+  /* Opera 12+ */
+  animation: bg-scrolling-reverse 9s infinite reverse;
+  /* IE 10+ */
+  animation-timing-function: linear;
+  position: absolute;
+  left: 0;
 }
 
 #contents #back .cha_box {
@@ -75,6 +90,27 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes bg-loop {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: 100%;
+  }
+}
+
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 1350px;
+  }
+}
+
+@keyframes bg-scrolling {
+  0% {
+    background-position: 1350px;
   }
 }
 

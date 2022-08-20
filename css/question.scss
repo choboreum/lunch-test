@@ -5,8 +5,24 @@
     overflow: hidden;
     #back{
         width: 100%;
-        height: 350px;
+        height: 450px;
         margin-bottom: 50px;
+        .bg-loop{
+            width: 100%;
+            height: 100%;
+            background: url(../images/bg-home.jpg) bottom;
+            background-size: cover;
+            -webkit-animation: bg-scrolling-reverse 9s infinite reverse; /* Safari 4+ */
+            -moz-animation:    bg-scrolling-reverse 9s infinite reverse; /* Fx 5+ */
+            -o-animation:      bg-scrolling-reverse 9s infinite reverse; /* Opera 12+ */
+            animation:         bg-scrolling-reverse 9s infinite reverse; /* IE 10+ */
+            -webkit-animation-timing-function: linear;
+            -moz-animation-timing-function:    linear;
+            -o-animation-timing-function:      linear;
+            animation-timing-function:         linear;
+            position: absolute;
+            left: 0;
+        }
         .cha_box {
             width: 280px;
             height: 100%;
@@ -58,19 +74,51 @@
     to {opacity: 0;}
 }
 
-@keyframes fadeOut {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
 @-webkit-keyframes fadeIn {
     from {opacity: 1;}
     to {opacity: 0;}
 }
 
+@keyframes fadeOut {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 @-webkit-keyframes fadeOut {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+@keyframes bg-loop {
+    0%   {right: 0;}
+    100% {right: 100%;}
+}
+
+$bg-width: 1350px;
+@-webkit-keyframes bg-scrolling-reverse {
+    100% { background-position: $bg-width; }
+}
+@-moz-keyframes    bg-scrolling-reverse {
+    100% { background-position: $bg-width; }
+}
+@-o-keyframes      bg-scrolling-reverse {
+    100% { background-position: $bg-width; }
+}
+@keyframes         bg-scrolling-reverse {
+    100% { background-position: $bg-width; }
+}
+
+@-webkit-keyframes bg-scrolling {
+    0% { background-position: $bg-width; }
+}
+@-moz-keyframes    bg-scrolling {
+    0% { background-position: $bg-width; }
+}
+@-o-keyframes      bg-scrolling {
+    0% { background-position: $bg-width; }
+}
+@keyframes         bg-scrolling {
+    0% { background-position: $bg-width; }
 }
 
 @media only screen and (max-width: 600px) {
